@@ -50,10 +50,21 @@
     echo "<br>";
     echo date_default_timezone_get();
     echo "<br>";
-    echo date_default_timezone_set("Asia/Dhaka");
+    date_default_timezone_set("Asia/Dhaka");
     echo "<br>";
     echo date_default_timezone_get(). "today" . date("h");
     echo "<br>";
+
+
+    $d1 = date_create("17-10-2003");
+    $d2 = date_create("11-03-2026");
+    echo "<br>";
+    $diff = date_diff($d1,$d2);
+    echo $diff->days ;
+    echo "<br>";
+    echo $diff-> m ;
+    echo "<br>";
+    echo $diff -> y
     
 
     ?>
