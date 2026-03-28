@@ -37,3 +37,26 @@ class car1
     }
 }
   $result= new car1("Toyota","Red");
+
+
+//   set
+class car2 {
+    public $name;
+    public $color;
+
+
+    public function setName($nam)
+    {
+        $this->name = $nam;
+    }
+    public function getName()
+    {
+        return $this->name;
+    }
+}
+
+  $result2= new car2();
+     $result2->setName("BMWwwwwwwwwwww");
+     echo "<br>";
+     echo $result2->getName();
+
