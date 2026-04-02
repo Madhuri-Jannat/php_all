@@ -11,10 +11,7 @@
 <title>Factorial Program using loop in PHP</title>  
 </head>  
 <body>  
-<!-- <?php 
-define("P","023");
-echo P;
-?> -->
+
 <form method="post">  
     Enter the Number:<br>  
     <input type="number" name="number" id="number">  
