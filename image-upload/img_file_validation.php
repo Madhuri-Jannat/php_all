@@ -27,5 +27,10 @@
         <input type="submit" name="submitbtn" id="">
 
     </form>
+    <?php
+    if(isset($_POST["submitbtn"])){
+        echo"<img src = '$s.$fileName' alt='image' width='400px'>";
+    }
+    ?>
 </body>
 </html>
