@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <?php
+    if(isset($_POST['submitbtn'])){
+        $fileName = $_FILES['f']['name']; //name mane holo file name
+        $tmp = $_FILES['f']['tmp_name']; //tmp mane loaction
+        $typ = pathinfo($fileName, PATHINFO_EXTENSION); //file type ber korar jonno 
+        $s = "img/";
+        if($typ == "jpg" || $typ == "png"){ //condition for file type
+        move_uploaded_file("$tmp", "$s.$fileName");
+         }
+         else {
+            echo "only jpg, png uploaded";
+         } //move_uploaded_file("form", "to");
+    }
+
+?>
+<body>
+    <form action="" method="post" enctype="multipart/form-data"> 
+        <input type="file" name="f" id="">
+        <input type="submit" name="submitbtn" id="">
+
+    </form>
+</body>
+</html>
