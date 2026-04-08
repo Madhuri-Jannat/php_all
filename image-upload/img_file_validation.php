@@ -30,6 +30,8 @@
     <?php
     if(isset($_POST["submitbtn"])){
         echo"<img src = '$s.$fileName' alt='image' width='400px'>";
+        echo "<br>";
+        echo "File storage successfull";
     }
     ?>
 </body>
