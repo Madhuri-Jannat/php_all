@@ -22,8 +22,15 @@ class Car
         file_put_contents(self::$file_source, $this->child(), FILE_APPEND);
     }
 
-    public static function desplay()
-    {
-        // for data show 
+    public static function display_students()
+  {
+
+    $data = file(self::$file_source);
+
+    echo "<b>ID | Name</b><br/>";
+    foreach ($data as $d) {
+      list($id, $name) = explode(",", trim("$d"));
+      echo "$id | $name<br/>";
     }
+  }
 }

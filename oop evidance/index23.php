@@ -32,6 +32,9 @@ if (isset($_POST['btnsubmit'])) {
         </form>
 
     </div>
+    <?php
+	car::display_students();
+	?>
 </body>
 
 </html>
