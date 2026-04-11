@@ -29,7 +29,7 @@
     </form>
     <?php
     if(isset($_POST["submitbtn"])){
-        echo"<img src = '$s.$fileName' alt='image' width='400px'>";
+        echo"<img src = '$s.$fileName' alt='image' width='300px' height='300px'> ";
         echo "<br>";
         echo "File storage successfull";
     }
