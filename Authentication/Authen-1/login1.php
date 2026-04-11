@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 if(isset($_POST['login'])){
     $user=$_POST["username"];
     $password=$_POST['password'];
@@ -10,6 +10,7 @@ if(isset($_POST['login'])){
         list($_username,$_password)=explode(",",$line);
         if(trim($_username)==$user && trim($_password)==$password){
            
+         $_SESSION["sname"]=$user;
 
             header("location:data.php");
 

@@ -7,5 +7,7 @@
 </head>
 <body>
     thanks for your authentication
+
+    <a href="logout.php">logout</a>
 </body>
 </html>
