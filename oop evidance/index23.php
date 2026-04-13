@@ -21,6 +21,9 @@ if (isset($_POST['btnsubmit'])) {
 </head>
 
 <body>
+   
+
+    
     <div>
         <form action="#" method="post">
             Id: <br>
@@ -32,6 +35,7 @@ if (isset($_POST['btnsubmit'])) {
         </form>
 
     </div>
+
     <?php
 	car::display_students();
 	?>
