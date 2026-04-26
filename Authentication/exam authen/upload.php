@@ -61,7 +61,7 @@ if(isset($error)) echo "<p class='error'>$error</p>";
 
 </div>
 
-<h2 style="color:white; text-align:center;">Image Gallery</h2>
+<h2 style="color:black; text-align:center;">Image Gallery</h2>
 
 <div class="gallery">
 
